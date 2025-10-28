@@ -13,4 +13,14 @@ with open ("productos.txt","r") as archivo:
 
         productos.append(prod)
 
-print(productos)
+
+nombre = input("Ingrese el nombre del producto a buscar  ")
+bandera = True
+for i in productos:
+    
+    if nombre == i["nombre"]:
+        bandera = False
+        print ("Los datos del producto son: ",i)
+
+if bandera == True:
+    print("No se encontró el producto")
