@@ -6,3 +6,12 @@ with open ("productos.txt","r") as archivo:
 print(f"producto: {a[0]}|Precio: {a[1]}|Cantidad: {a[2]}")
 print(f"producto: {b[0]}|Precio: {b[1]}|Cantidad: {b[2]}")
 print(f"producto: {c[0]}|Precio: {c[1]}|Cantidad: {c[2]}")
+
+#Punto 3 
+prod = input("Ingrese el producto ")
+prec = input("Ingrese el precio ")
+cant = input("Ingrese la cantidad ")
+
+with open ("productos.txt","a") as archivo:
+    archivo.write(f"{prod},{prec},{cant}")
+    
